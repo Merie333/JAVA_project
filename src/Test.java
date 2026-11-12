@@ -29,6 +29,8 @@ public class Test {
         HitBox hero = new HitBox(64, 64, 32, 32, "Héros");
 
         // 4. On affiche le donjon dans la console
-        dungeon.displayDungeonInConsole(hero);
+        // dungeon.displayDungeonInConsole(hero);
+        System.out.println("Nombre d'éléments générés : " + dungeon.getThingsArray().size());
+        System.out.println("Type de la case (0,0) : " + dungeon.getThingsArray().get(0).getClass().getSimpleName());
     }
 }
